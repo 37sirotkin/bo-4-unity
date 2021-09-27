@@ -912,6 +912,12 @@
           },
         },
       };
+
+      function getOrientation() {
+          return window.innerWidth > window.innerHeight
+            ? "landscape"
+            : "portrait";
+        }
       tabText.classList.add("tab-text-start-animation");
       simple.classList.add("simple-start-animation");
 
